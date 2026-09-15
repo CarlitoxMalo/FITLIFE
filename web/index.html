@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Panel principal</title>
+</head>
+
+<body style="
+    margin: 0;
+    background-color: #0D2B45;
+
+    background-image:
+        linear-gradient(
+            rgba(13, 43, 69, 0.28),
+            rgba(13, 43, 69, 0.45)
+        ),
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=90'),
+        url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=90'),
+        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=90'),
+        url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=90');
+
+    background-size:
+        100% 100%,
+        50% 50%,
+        50% 50%,
+        50% 50%,
+        50% 50%;
+
+    background-position:
+        center,
+        top left,
+        top right,
+        bottom left,
+        bottom right;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+">
+
+<!-- ENCABEZADO PRINCIPAL -->
+<div style="
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 25px;
+    ">
+
+    <!-- Cuadro blanco de FITLIFE -->
+    <div style="
+            display: inline-block;
+            background-color: #FFFFFF;
+            padding: 22px 55px 20px 55px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            border: 1px solid rgba(0,143,90,0.15);
+        ">
+
+        <h1 style="
+                color: #008F5A;
+                font-size: 64px;
+                letter-spacing: 5px;
+                margin: 0;
+                font-weight: 900;
+                font-family: Arial Black, Impact, sans-serif;
+                text-transform: uppercase;
+                font-style: italic;
+                transform: skewX(-8deg);
+                text-shadow:
+                    2px 2px 0px #ffffff,
+                    4px 4px 0px rgba(0,0,0,0.15);
+            ">
+            FITLIFE
+        </h1>
+
+        <div style="
+                width: 70px;
+                height: 4px;
+                background-color: #008F5A;
+                border-radius: 10px;
+                margin: 10px auto 12px auto;
+            "></div>
+
+        <p style="
+                color: #000000;
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin: 0;
+                font-weight: 900;
+                font-family: Arial Black, Impact, Arial, sans-serif;
+                text-transform: uppercase;
+                font-style: italic;
+                transform: skewX(-5deg);
+                text-shadow: 1px 1px 0px rgba(0,0,0,0.10);
+            ">
+            Bienestar físico y emocional
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- BARRA DE NAVEGACIÓN -->
+<div style="
+        width: 94%;
+        max-width: 1250px;
+        margin: 0 auto 30px auto;
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+        text-align: center;
+    ">
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Inicio</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Perfil</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Rutinas</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Progreso</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Alimentación</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Mensajes</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Comunidad</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Compañero virtual</a>
+
+    <a href="#" style="
+            color: #008F5A;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        ">Ajustes</a>
+
+</div>
+
+
+<!-- CONTENIDO PRINCIPAL -->
+<main style="
+        width: 94%;
+        max-width: 1150px;
+        margin: 0 auto 50px auto;
+    ">
+
+
+    <!-- MENSAJE DE BIENVENIDA -->
+    <div style="
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 28px 35px;
+        margin-bottom: 28px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        border-left: 7px solid #008F5A;
+        text-align: center;
+    ">
+
+        <h2 style="
+            color: #008F5A;
+            font-size: 30px;
+            margin: 0 0 8px 0;
+            font-weight: 900;
+        ">
+            ¡Bienvenido a FITLIFE!
+        </h2>
+
+        <p style="
+            color: #455A64;
+            font-size: 16px;
+            margin: 0;
+            line-height: 1.6;
+        ">
+            Administra tu bienestar físico y emocional desde un solo lugar.
+        </p>
+
+    </div>
+
+    <!-- TÍTULO DE SECCIONES -->
+    <div style="
+            text-align: center;
+            margin-bottom: 25px;
+        ">
+
+        <p style="
+                color: #FFFFFF;
+                font-size: 17px;
+                font-weight: bold;
+                margin: 0;
+            ">
+            Selecciona una opción para comenzar
+        </p>
+
+    </div>
+
+
+    <!-- TARJETAS -->
+    <section style="
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            width: 100%;
+        ">
+
+
+        <!-- PERFIL -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                🧑
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Perfil
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Administra tus datos personales y objetivos.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Perfil')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- RUTINAS -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                🏋️
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Rutinas
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Consulta y realiza tus rutinas personalizadas.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Rutinas')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- PROGRESO -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                📊
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Progreso
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Observa tus avances y resultados.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Progreso')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- ALIMENTACIÓN -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                🥗
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Alimentación
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Consulta recomendaciones para una alimentación saludable.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Alimentación')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- MENSAJES -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                💬
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Mensajes
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Revisa tus mensajes y notificaciones.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Mensajes')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- COMUNIDAD -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                🧑‍🤝‍🧑
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Comunidad
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Comparte experiencias e interactúa con otros usuarios.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Comunidad')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- COMPAÑERO VIRTUAL -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                🤖
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Compañero virtual
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Interactúa con tu compañero virtual y recibe motivación.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Compañero virtual')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+
+        <!-- AJUSTES -->
+        <div style="
+                background-color: #FFFFFF;
+                border-radius: 18px;
+                padding: 25px;
+                box-sizing: border-box;
+                min-height: 205px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+                border-top: 5px solid #008F5A;
+                transition: transform 0.2s;
+            "
+             onmouseover="this.style.transform='translateY(-5px)'"
+             onmouseout="this.style.transform='translateY(0)'">
+
+            <div style="
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                ">
+                ⚙️
+            </div>
+
+            <h3 style="
+                    color: #0D2B45;
+                    font-size: 21px;
+                    margin: 0 0 8px 0;
+                ">
+                Ajustes
+            </h3>
+
+            <p style="
+                    color: #455A64;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    margin: 0;
+                ">
+                Configura las opciones de tu aplicación.
+            </p>
+
+            <button
+                    onclick="alert('Has ingresado a Ajustes')"
+                    style="
+                        margin-top: 18px;
+                        padding: 10px 22px;
+                        border: none;
+                        border-radius: 8px;
+                        background-color: #008F5A;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: bold;
+                    ">
+                Ingresar
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- PIE DE PÁGINA -->
+<footer style="
+        background-color: #FFFFFF;
+        padding: 25px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        margin-top: 20px;
+    ">
+
+    <p style="
+            color: #455A64;
+            font-size: 14px;
+            margin: 0;
+        ">
+        © 2026 FitLife - Bienestar físico y emocional
+    </p>
+
+</footer>
+
+</body>
+</html>
